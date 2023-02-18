@@ -8,7 +8,8 @@ document.getElementById('firts-card').addEventListener('click', function () {
     const productName = document.getElementById('first-product-name').innerText;
     const firstInput = document.getElementById('first-card-first-input').value;
     const secondInput = document.getElementById('first-card-second-input').value;
-    const result = 0.5 * parseFloat(firstInput) * parseFloat(secondInput);
+    const results = 0.5 * parseFloat(firstInput) * parseFloat(secondInput);
+    const result = results.toFixed(2);
     const convertToMeterSquire = document.write = '<span style="background-color: blue; color: white; padding: 5px; border-radius: 5px">Convert to m<sup>2</sup></span>';
 
     displayData(productName, firstInput, secondInput, result, convertToMeterSquire);
@@ -56,7 +57,8 @@ document.getElementById('fourth-card').addEventListener('click', function () {
     const productName = document.getElementById('fourth-product-name').innerText;
     const firstInput = document.getElementById('fourth-card-first-input').value;
     const secondInput = document.getElementById('fourth-card-second-input').value;
-    const result = 0.5 * parseFloat(firstInput) * parseFloat(secondInput);
+    const results = 0.5 * parseFloat(firstInput) * parseFloat(secondInput);
+    const result = results.toFixed(2);
     const convertToMeterSquire = document.write = '<span style="background-color: blue; color: white; padding: 5px; border-radius: 5px">Convert to m<sup>2</sup></span>';
 
     displayData(productName, firstInput, secondInput, result, convertToMeterSquire);
@@ -72,7 +74,25 @@ document.getElementById('fift-card').addEventListener('click', function () {
     const productName = document.getElementById('fifth-product-name').innerText;
     const firstInput = document.getElementById('fifth-card-first-input').value;
     const secondInput = document.getElementById('fifth-card-second-input').value;
-    const result = 0.5 * parseFloat(firstInput) * parseFloat(secondInput);
+    const results = 0.5 * parseFloat(firstInput) * parseFloat(secondInput);
+    const result = results.toFixed(2);
+    const convertToMeterSquire = document.write = '<span style="background-color: blue; color: white; padding: 5px; border-radius: 5px">Convert to m<sup>2</sup></span>';
+
+    displayData(productName, firstInput, secondInput, result, convertToMeterSquire);
+});
+
+
+/*
+*================Sixth Card==================
+*/
+document.getElementById('sixth-card').addEventListener('click', function () {
+    serial += 1;
+
+    const productName = document.getElementById('sixth-product-name').innerText;
+    const firstInput = document.getElementById('sixth-card-first-input').value;
+    const secondInput = document.getElementById('sixth-card-second-input').value;
+    const results = 3.14 * parseFloat(firstInput) * parseFloat(secondInput);
+    const result = results.toFixed(2);
     const convertToMeterSquire = document.write = '<span style="background-color: blue; color: white; padding: 5px; border-radius: 5px">Convert to m<sup>2</sup></span>';
 
     displayData(productName, firstInput, secondInput, result, convertToMeterSquire);
