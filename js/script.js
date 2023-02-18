@@ -31,6 +31,21 @@ document.getElementById('second-card').addEventListener('click', function () {
 });
 
 
+/*
+*================Third Card==================
+*/
+document.getElementById('third-card').addEventListener('click', function () {
+    serial += 1;
+
+    const productName = document.getElementById('third-product-name').innerText;
+    const firstInput = document.getElementById('third-card-first-input').value;
+    const secondInput = document.getElementById('third-card-second-input').value;
+    const result = parseFloat(firstInput) * parseFloat(secondInput);
+    const convertToMeterSquire = document.write = '<span style="background-color: blue; color: white; padding: 5px; border-radius: 5px">Convert to M<sup>2</sup></span>';
+
+    displayData(productName, firstInput, secondInput, result, convertToMeterSquire);
+});
+
 
 /*
 *================Function Data Display==================
