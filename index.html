@@ -46,24 +46,24 @@
             <div class="container mb-5">
                 <div class="row mt-5">
                     <!-- Card Start Here -->
-                    <div class="col-12 col-md-12 col-lg-9">
+                    <div class="col-12 col-md-12 col-lg-8">
                         <div class="row row-cols-1 row-cols-md-3 g-4">
                             <div class="col">
                                 <div class="card text-center align-items-center">
                                     <img src="img/triangle.png" class="card-img-top p-4" alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title">Triangle</h5>
+                                        <h5 id="product-name" class="card-title">Triangle</h5>
                                         <p class="card-text">Area (A) = 0.5 x b x h</p>
                                         <div class="input-group mb-4">
-                                            <input type="text" aria-label="First input" class="form-control"
+                                            <input id="first-card-first-input" type="text" aria-label="First input" class="form-control"
                                                 placeholder="a">
                                             <span class="input-group-text">cm</span>
-                                            <input type="text" aria-label="Last input" class="form-control"
+                                            <input id="first-card-second-input" type="text" aria-label="Last input" class="form-control"
                                                 placeholder="h">
                                             <span class="input-group-text">cm</span>
                                         </div>
                                         <div class="d-grid gap-2">
-                                            <button class="btn btn-primary" type="button">Calculate</button>
+                                            <button id="firts-card" class="btn btn-primary" type="button">Calculate</button>
                                         </div>
                                     </div>
                                 </div>
@@ -173,19 +173,22 @@
                     <!-- Card End Here -->
 
                     <!-- Card Result Strat Here -->
-                    <div class="col-12 col-md-12 col-lg-3">
+                    <div class="col-12 col-md-12 col-lg-4">
                         <h2 class="text-center fw-bold text-decoration-underline">Area Calculation</h2>
                         <!-- Result data start -->
                         <table class="table">
-                            <tbody>
-                                <tr>
-                                    <th>2</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                </tr>
+                            <thead>
+                              <tr>
+                                <!-- <th scope="col">No</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Result</th>
+                                <th scope="col">Button</th> -->
+                              </tr>
+                            </thead>
+                            <tbody id="table-container">
+                              
                             </tbody>
-                        </table>
+                          </table>
                         <!-- Result data end -->
                     </div>
                     <!-- Card Result End Here -->
