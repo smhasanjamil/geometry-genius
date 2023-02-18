@@ -129,11 +129,17 @@ document.getElementById('fift-card').addEventListener('click', function () {
 *================Sixth Card==================
 */
 document.getElementById('sixth-card').addEventListener('click', function () {
-    serial += 1;
 
     const productName = document.getElementById('sixth-product-name').innerText;
     const firstInput = document.getElementById('sixth-card-first-input').value;
     const secondInput = document.getElementById('sixth-card-second-input').value;
+
+    if (isNaN(firstInput) || isNaN(secondInput) || parseFloat(firstInput) <= 0 || parseFloat(secondInput) <= 0 || firstInput === '' || secondInput === '') {
+        return window.alert('Please enter only numbers and greater than 0');
+    }
+
+    serial += 1;
+
     const results = 3.14 * parseFloat(firstInput) * parseFloat(secondInput);
     const result = results.toFixed(2);
     const convertToMeterSquire = document.write = '<span style="background-color: blue; color: white; padding: 5px; border-radius: 5px">Convert to m<sup>2</sup></span>';
