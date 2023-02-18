@@ -1,5 +1,13 @@
 let serial = 0;
 /*
+*================Blog Page==================
+*/
+document.getElementById('blog-button').addEventListener('click', function (){
+    window.location.href = 'blog.html';
+});
+
+
+/*
 *================First Card==================
 */
 document.getElementById('firts-card').addEventListener('click', function () {
@@ -114,10 +122,6 @@ function displayData(nameOfProduct, valueOfFirstInput, ValueOfSecondInput, Resul
     `;
     container.appendChild(tr);
 }
-
-
-
-
 
 
 /*
