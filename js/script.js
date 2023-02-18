@@ -18,6 +18,10 @@ document.getElementById('firts-card').addEventListener('click', function () {
     const secondInput = document.getElementById('first-card-second-input').value;
 
     if (isNaN(firstInput) || isNaN(secondInput) || parseFloat(firstInput) <= 0 || parseFloat(secondInput) <= 0 || firstInput === '' || secondInput === '') {
+
+        document.getElementById('first-card-first-input').value = '';
+        document.getElementById('first-card-second-input').value = '';
+
         return window.alert('Please enter only numbers and greater than 0');
     }
 
@@ -29,8 +33,8 @@ document.getElementById('firts-card').addEventListener('click', function () {
 
     displayData(productName, firstInput, secondInput, result, convertToMeterSquire);
 
-    // document.getElementById('first-card-first-input').value = '';
-    // document.getElementById('first-card-second-input').value = '';
+    document.getElementById('first-card-first-input').value = '';
+    document.getElementById('first-card-second-input').value = '';
 
 });
 
@@ -45,6 +49,8 @@ document.getElementById('second-card').addEventListener('click', function () {
     const secondInput = document.getElementById('second-card-second-input').value;
 
     if (isNaN(firstInput) || isNaN(secondInput) || parseFloat(firstInput) <= 0 || parseFloat(secondInput) <= 0 || firstInput === '' || secondInput === '') {
+        document.getElementById('second-card-first-input').value = '';
+        document.getElementById('second-card-second-input').value = '';
         return window.alert('Please enter only numbers and greater than 0');
     }
 
@@ -54,6 +60,10 @@ document.getElementById('second-card').addEventListener('click', function () {
     const convertToMeterSquire = document.write = '<span style="background-color: blue; color: white; padding: 5px; border-radius: 5px">Convert to m<sup>2</sup></span>';
 
     displayData(productName, firstInput, secondInput, result, convertToMeterSquire);
+
+    document.getElementById('second-card-first-input').value = '';
+    document.getElementById('second-card-second-input').value = '';
+
 });
 
 
@@ -67,6 +77,10 @@ document.getElementById('third-card').addEventListener('click', function () {
     const secondInput = document.getElementById('third-card-second-input').value;
 
     if (isNaN(firstInput) || isNaN(secondInput) || parseFloat(firstInput) <= 0 || parseFloat(secondInput) <= 0 || firstInput === '' || secondInput === '') {
+
+        document.getElementById('third-card-first-input').value = '';
+        document.getElementById('third-card-second-input').value = '';
+
         return window.alert('Please enter only numbers and greater than 0');
     }
 
@@ -76,6 +90,10 @@ document.getElementById('third-card').addEventListener('click', function () {
     const convertToMeterSquire = document.write = '<span style="background-color: blue; color: white; padding: 5px; border-radius: 5px">Convert to m<sup>2</sup></span>';
 
     displayData(productName, firstInput, secondInput, result, convertToMeterSquire);
+
+    document.getElementById('third-card-first-input').value = '';
+    document.getElementById('third-card-second-input').value = '';
+
 });
 
 
@@ -89,6 +107,10 @@ document.getElementById('fourth-card').addEventListener('click', function () {
     const secondInput = document.getElementById('fourth-card-second-input').value;
 
     if (isNaN(firstInput) || isNaN(secondInput) || parseFloat(firstInput) <= 0 || parseFloat(secondInput) <= 0 || firstInput === '' || secondInput === '') {
+
+        document.getElementById('fourth-card-first-input').value = '';
+        document.getElementById('fourth-card-second-input').value = '';
+
         return window.alert('Please enter only numbers and greater than 0');
     }
 
@@ -99,6 +121,10 @@ document.getElementById('fourth-card').addEventListener('click', function () {
     const convertToMeterSquire = document.write = '<span style="background-color: blue; color: white; padding: 5px; border-radius: 5px">Convert to m<sup>2</sup></span>';
 
     displayData(productName, firstInput, secondInput, result, convertToMeterSquire);
+
+    document.getElementById('fourth-card-first-input').value = '';
+    document.getElementById('fourth-card-second-input').value = '';
+
 });
 
 
@@ -112,6 +138,10 @@ document.getElementById('fift-card').addEventListener('click', function () {
     const secondInput = document.getElementById('fifth-card-second-input').value;
 
     if (isNaN(firstInput) || isNaN(secondInput) || parseFloat(firstInput) <= 0 || parseFloat(secondInput) <= 0 || firstInput === '' || secondInput === '') {
+
+        document.getElementById('fifth-card-first-input').value = '';
+        document.getElementById('fifth-card-second-input').value = '';
+
         return window.alert('Please enter only numbers and greater than 0');
     }
 
@@ -122,6 +152,9 @@ document.getElementById('fift-card').addEventListener('click', function () {
     const convertToMeterSquire = document.write = '<span style="background-color: blue; color: white; padding: 5px; border-radius: 5px">Convert to m<sup>2</sup></span>';
 
     displayData(productName, firstInput, secondInput, result, convertToMeterSquire);
+
+    document.getElementById('fifth-card-first-input').value = '';
+    document.getElementById('fifth-card-second-input').value = '';
 });
 
 
@@ -135,6 +168,10 @@ document.getElementById('sixth-card').addEventListener('click', function () {
     const secondInput = document.getElementById('sixth-card-second-input').value;
 
     if (isNaN(firstInput) || isNaN(secondInput) || parseFloat(firstInput) <= 0 || parseFloat(secondInput) <= 0 || firstInput === '' || secondInput === '') {
+
+        document.getElementById('sixth-card-first-input').value = '';
+        document.getElementById('sixth-card-second-input').value = '';
+
         return window.alert('Please enter only numbers and greater than 0');
     }
 
@@ -145,6 +182,10 @@ document.getElementById('sixth-card').addEventListener('click', function () {
     const convertToMeterSquire = document.write = '<span style="background-color: blue; color: white; padding: 5px; border-radius: 5px">Convert to m<sup>2</sup></span>';
 
     displayData(productName, firstInput, secondInput, result, convertToMeterSquire);
+
+    document.getElementById('sixth-card-first-input').value = '';
+    document.getElementById('sixth-card-second-input').value = '';
+
 });
 
 
