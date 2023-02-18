@@ -114,3 +114,28 @@ function displayData(nameOfProduct, valueOfFirstInput, ValueOfSecondInput, Resul
     `;
     container.appendChild(tr);
 }
+
+
+
+
+
+
+/*
+*================Random Color==================
+*/
+const cards = document.querySelectorAll('.card-random-bg-color');
+
+cards.forEach(function (card) {
+    card.addEventListener('mouseover', function () {
+        const colors = ['#FF0000', '#00FF00', '#0000FF', '#000000', '#FFFF00', '#00FFFF', '#FF00FF', '#C0C0C0', '#808080', '#800000', '#808000'];
+        const randomColor = colors[Math.floor(Math.random() * colors.length)];
+        card.style.backgroundColor = randomColor;
+    });
+
+    card.addEventListener('mouseout', function () {
+        card.style.backgroundColor = '';
+    });
+});
+
+
+
