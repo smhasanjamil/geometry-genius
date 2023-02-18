@@ -10,6 +10,7 @@ document.getElementById('blog-button').addEventListener('click', function () {
 /*
 *================First Card==================
 */
+
 document.getElementById('firts-card').addEventListener('click', function () {
 
 
@@ -37,6 +38,7 @@ document.getElementById('firts-card').addEventListener('click', function () {
     document.getElementById('first-card-second-input').value = '';
 
 });
+
 
 
 /*
@@ -193,7 +195,7 @@ document.getElementById('sixth-card').addEventListener('click', function () {
 *================Function Data Display==================
 */
 //Common function to display data
-function displayData(nameOfProduct, valueOfFirstInput, ValueOfSecondInput, ResultOfCalculation, convertToMeterSquire) {
+function displayData(nameOfProduct, valueOfFirstInput, ValueOfSecondInput, ResultOfCalculation, convertToMeterSquire, editButtonAction) {
     const container = document.getElementById('table-container');
     const tr = document.createElement("tr");
     tr.innerHTML = `
@@ -204,6 +206,7 @@ function displayData(nameOfProduct, valueOfFirstInput, ValueOfSecondInput, Resul
     `;
     container.appendChild(tr);
 }
+
 
 
 /*
