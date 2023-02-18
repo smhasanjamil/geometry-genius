@@ -64,6 +64,22 @@ document.getElementById('fourth-card').addEventListener('click', function () {
 
 
 /*
+*================Fifth Card==================
+*/
+document.getElementById('fift-card').addEventListener('click', function () {
+    serial += 1;
+
+    const productName = document.getElementById('fifth-product-name').innerText;
+    const firstInput = document.getElementById('fifth-card-first-input').value;
+    const secondInput = document.getElementById('fifth-card-second-input').value;
+    const result = 0.5 * parseFloat(firstInput) * parseFloat(secondInput);
+    const convertToMeterSquire = document.write = '<span style="background-color: blue; color: white; padding: 5px; border-radius: 5px">Convert to m<sup>2</sup></span>';
+
+    displayData(productName, firstInput, secondInput, result, convertToMeterSquire);
+});
+
+
+/*
 *================Function Data Display==================
 */
 //Common function to display data
