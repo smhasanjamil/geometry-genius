@@ -106,11 +106,17 @@ document.getElementById('fourth-card').addEventListener('click', function () {
 *================Fifth Card==================
 */
 document.getElementById('fift-card').addEventListener('click', function () {
-    serial += 1;
 
     const productName = document.getElementById('fifth-product-name').innerText;
     const firstInput = document.getElementById('fifth-card-first-input').value;
     const secondInput = document.getElementById('fifth-card-second-input').value;
+
+    if (isNaN(firstInput) || isNaN(secondInput) || parseFloat(firstInput) <= 0 || parseFloat(secondInput) <= 0 || firstInput === '' || secondInput === '') {
+        return window.alert('Please enter only numbers and greater than 0');
+    }
+
+    serial += 1;
+
     const results = 0.5 * parseFloat(firstInput) * parseFloat(secondInput);
     const result = results.toFixed(2);
     const convertToMeterSquire = document.write = '<span style="background-color: blue; color: white; padding: 5px; border-radius: 5px">Convert to m<sup>2</sup></span>';
